@@ -1,0 +1,8 @@
+services:
+  papermc:
+    image: marctv/minecraft-papermc-server:latest
+    volumes:
+      - ./plugins:/data/plugins
+    ports:
+      - "25566:25565"
+      - "9100:9100"
